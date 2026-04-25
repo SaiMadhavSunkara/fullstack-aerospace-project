@@ -1,4 +1,5 @@
 console.log("🔥 SERVER FILE LOADED");
+console.log("ENV CHECK:", process.env.MONGO_URI);
 
 const express = require("express");
 const cors = require("cors");
