@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+body {
+  font-family: 'Orbitron', 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {  
+  background: linear-gradient(90deg, #1976d2 0%, #21a1f3 100%);
+  height: 64px;
+  display: flex;
+  align-items: center;
+  padding: 0 32px;
+  box-shadow: 0 2px 12px rgba(25,118,210,0.08);
+  animation: navbarFadeIn 1.2s cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+@keyframes navbarFadeIn {
+  from { opacity: 0; transform: translateY(-32px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Menu bars and close button */
+.menu-bars {
+  font-size: 32px;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.3s, transform 0.3s;
+}
+.menu-bars:hover {
+  color: #ffd600;
+  transform: scale(1.15); /* scale only, no rotate */
+}
+
+/* Remove shadow/background for close icon */
+.navbar-toggle .menu-bars,
+.navbar-toggle .menu-bars svg {
+  background: none;
+  box-shadow: none;
+  padding: 0;
+}
+
+/* Logo */
+.navbar-logo {
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Title */
+.navbar-title {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-left: 18px;
+  transition: margin-left 0.35s ease;  /* animate margin instead of transform */
+}
+.navbar-title-shift {
+  margin-left: 200px; /* equal to sidebar width to shift smoothly */
+}
+
+.navbar-spacer {
+  flex: 1;
+}
+
+/* Sidebar */
+.nav-menu {
+  background: linear-gradient(135deg, #1976d2 0%, #21a1f3 100%);
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: 350ms;
+  z-index: 100;
+}
+
+.nav-menu.active {
+  left: 0;
+  transition: 350ms;
+}
+
+.nav-menu-items {
+  width: 100%;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar-toggle {
+  background-color: #1976d2;
+  height: 64px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.nav-menu-items li {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+}
+
+.nav-menu-items li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-family: 'Orbitron', 'Segoe UI', Arial, sans-serif;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: color 0.3s, border-left 0.3s, padding-left 0.3s, background 0.3s;
+  background: none; /* remove hover background */
+}
+
+.nav-menu-items li a:hover {
+  color: #ffd600;
+  border-left: 4px solid #ffd600;
+  padding-left: 20px;
+  background: none; /* remove highlight */
+}
+
+.nav-menu-items li a span {
+  margin-left: 16px;
+  font-weight: 600;
+}
+
+
+/* RIGHT SIDE GROUP */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* EMAIL */
+.user-email {
+  font-size: 0.85rem;
+  color: #fff;
+  opacity: 0.9;
+}
+
+/* LOGOUT BUTTON */
+.logout-btn {
+  padding: 6px 14px;
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.logout-btn:hover {
+  background-color: #ffd600;
+  color: #1976d2;
+  border-color: #ffd600;
+}

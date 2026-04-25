@@ -1,0 +1,90 @@
+/* BACKGROUND SAME STYLE AS OTHER PAGES */
+.tech-page {
+  position: relative;
+  min-height: 100vh;
+  font-family: 'Orbitron', sans-serif;
+  color: #fff;
+}
+
+/* OPTIONAL BACKGROUND LAYERS (reuse if you have these classes) */
+
+
+
+
+/* SCROLL CONTAINER (LIKE MEMBERS BUT BETTER) */
+.tech-scroll-container {
+  height: 100vh;
+  overflow-y: auto;
+  padding: 60px 0;
+}
+
+/* GRID LAYOUT (MULTIPLE CARDS — NOT ONE PER SCREEN) */
+.tech-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px;
+}
+
+/* CARD DESIGN (INSPIRED BY MEMBER CARD) */
+.tech-card {
+  width: 320px;
+  min-height: 300px;
+
+  background: rgba(255, 255, 255, 0.95);
+  color: #1976d2;
+
+  border: 3px solid #1976d2;
+  border-radius: 18px;
+
+  padding: 25px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* HOVER EFFECT */
+.tech-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+}
+
+/* TITLE */
+.tech-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* DESCRIPTION */
+.tech-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* QUICK LINKS BUTTON */
+.tech-link-btn {
+  margin-top: 15px;
+  padding: 10px 16px;
+
+  background-color: #1976d2;
+  color: white;
+
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+/* HOVER BUTTON */
+.tech-link-btn:hover {
+  background-color: #145a9e;
+  transform: translateY(-2px);
+}

@@ -1,0 +1,88 @@
+/* SAME BASE STYLE AS MEMBER DETAILS */
+.page-container {
+  min-height: 100vh;
+  padding: 60px 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+
+  background-color: #0a0a0a;
+  color: #fff;
+}
+
+/* HEADING */
+.page-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+}
+
+/* FORM (NO CARD BOX — CLEAN LIKE MEMBER PAGE) */
+.page-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 300px;
+}
+
+/* INPUTS */
+.page-container input,
+.page-container textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 2px solid #1976d2;
+
+  background: transparent;
+  color: #fff;
+
+  font-size: 1rem;
+  outline: none;
+
+  transition: 0.3s;
+}
+
+/* FOCUS EFFECT (BLUE GLOW LIKE PROFILE IMAGE) */
+.page-container input:focus,
+.page-container textarea:focus {
+  box-shadow: 0 0 10px rgba(25,118,210,0.7);
+}
+
+/* TEXTAREA */
+.page-container textarea {
+  min-height: 100px;
+  resize: none;
+}
+
+/* BUTTON (MATCH RESUME BUTTON STYLE) */
+.page-container button {
+  margin-top: 10px;
+  padding: 10px 20px;
+
+  background-color: #1976d2;
+  color: #fff;
+
+  border: none;
+  border-radius: 8px;
+
+  cursor: pointer;
+  font-size: 16px;
+
+  transition: 0.3s;
+}
+
+/* BUTTON HOVER */
+.page-container button:hover {
+  background-color: #145a9e;
+  transform: translateY(-2px);
+}
+
+/* SUCCESS MESSAGE */
+.page-container p {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #4caf50;
+}

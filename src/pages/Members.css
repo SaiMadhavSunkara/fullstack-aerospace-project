@@ -1,0 +1,86 @@
+/* Scroll container */
+.members-scroll-container {
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  padding: 40px 0;  /* gap above & below for spacing */
+}
+
+/* Each card: slightly smaller than full screen */
+.member-card {
+  scroll-snap-align: center;
+  height: 80vh;                 /* reduced height */
+  width: 70%;                   /* reduced width */
+  margin: 40px auto;            /* gap between cards + center horizontally */
+  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+
+  background-color: rgba(255, 255, 255, 0.95);
+  border: 3px solid #1976d2;
+  border-radius: 20px;
+  padding: 30px;
+  box-sizing: border-box;
+  text-align: left;
+  font-family: 'Orbitron', sans-serif;
+  color: #1976d2;
+
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.member-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+}
+
+/* Rectangle photo */
+.member-photo-rect {
+  width: 220px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Info block */
+.member-info {
+  flex: 1;
+}
+
+.member-info h2 {
+  margin: 0 0 10px 0;
+  font-size: 2rem;
+}
+
+.member-info p {
+  margin: 6px 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.member-desc {
+  margin-top: 10px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.skill-badge {
+  background: #f0f0f0;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
